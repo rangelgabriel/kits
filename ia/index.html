@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IA na Vida Real — 110 comandos prontos para usar a IA no seu dia</title>
+<meta name="description" content="Kit com 110 comandos prontos para copiar e colar no ChatGPT, Gemini ou Claude e resolver trabalho, dinheiro, casa, estudos e família. Bônus: Organizador de Remédios da Família.">
+<meta property="og:title" content="IA na Vida Real — 110 comandos prontos">
+<meta property="og:description" content="Copie, cole e resolva. Para quem nunca usou IA ou só usa para perguntas simples.">
+<style>
+:root{--verde:#0f3d3a;--verde2:#1f8a70;--claro:#eef7f3;--amarelo:#ffd36b;--txt:#1d2433;--cinza:#5b6675;--borda:#d9e3df;--bg:#ffffff}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--txt);background:var(--bg);line-height:1.6;font-size:17px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.2;margin:0 0 14px}
+h2{font-size:clamp(26px,4vw,36px);color:var(--verde)}
+section{padding:64px 0}
+.btn{display:inline-block;background:var(--amarelo);color:var(--verde);font-weight:800;font-size:19px;padding:18px 34px;border-radius:999px;text-decoration:none;box-shadow:0 6px 0 #d9a92f;transition:transform .1s}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 #d9a92f}
+.mini{font-size:14px;color:var(--cinza);margin-top:12px}
+/* hero */
+.hero{background:var(--verde);color:#fff;padding:56px 0 72px}
+.hero .tag{color:#9ee6c9;letter-spacing:.14em;text-transform:uppercase;font-size:13px;font-weight:600}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:14px 0 18px}
+.hero h1 span{color:var(--amarelo)}
+.hero p.sub{font-size:clamp(18px,2.4vw,21px);color:#d8efe7;max-width:640px}
+.hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero .mini{color:#9ee6c9}
+.mock{background:#fff;color:var(--txt);border-radius:16px;padding:18px;box-shadow:0 20px 50px rgba(0,0,0,.35);transform:rotate(1.5deg)}
+.mock .h{display:flex;gap:8px;align-items:center;font-weight:700;color:var(--verde);font-size:15px;margin-bottom:8px}
+.mock .n{background:var(--verde2);color:#fff;font-size:12px;padding:2px 8px;border-radius:6px}
+.mock pre{white-space:pre-wrap;font-family:Menlo,Consolas,monospace;font-size:13px;background:#f7faf9;padding:12px;border-radius:8px;margin:0}
+.c{background:#ffe9a8;border-radius:3px;padding:0 3px}
+/* dor */
+.dor ul{list-style:none;padding:0;display:grid;gap:12px;max-width:720px}
+.dor li{background:var(--claro);padding:14px 18px;border-radius:10px}
+.dor li::before{content:"😩 "}
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin-top:24px}
+.card{border:1px solid var(--borda);border-radius:14px;padding:18px}
+.card .e{font-size:28px}
+.card h3{font-size:17px;color:var(--verde);margin:6px 0 4px}
+.card p{margin:0;font-size:15px;color:var(--cinza)}
+/* exemplos */
+.ex{background:var(--claro)}
+.exs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px}
+.exs .mock{transform:none;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+/* passos */
+.passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;counter-reset:p;margin-top:20px}
+.passo{padding:20px;border-radius:14px;border:1px solid var(--borda)}
+.passo::before{counter-increment:p;content:counter(p);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--verde);color:#fff;font-weight:800;margin-bottom:10px}
+/* bonus */
+.bonus{background:var(--verde);color:#fff}
+.bonus h2{color:var(--amarelo)}
+.bonus .box{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center}
+.bonus .pill{font-size:64px}
+.bonus ul{padding-left:20px;color:#d8efe7}
+/* para quem */
+.pq{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.pq div{border-radius:14px;padding:22px}
+.sim{background:var(--claro)}
+.nao{background:#f6f6f6}
+.pq ul{padding-left:20px;margin:0}
+/* oferta */
+.oferta{text-align:center}
+.preco-box{max-width:520px;margin:24px auto 0;border:3px solid var(--verde2);border-radius:20px;padding:30px 24px}
+.preco-box ul{text-align:left;list-style:none;padding:0;margin:0 0 20px}
+.preco-box li{padding:6px 0;border-bottom:1px dashed var(--borda)}
+.preco-box li::before{content:"✅ "}
+.de{color:var(--cinza);text-decoration:line-through;font-size:18px}
+.por{font-size:56px;font-weight:900;color:var(--verde);line-height:1.1}
+.por small{font-size:20px;font-weight:600}
+.garantia{display:flex;gap:16px;align-items:center;max-width:620px;margin:28px auto 0;text-align:left;background:var(--claro);padding:18px;border-radius:14px}
+.garantia .s{font-size:44px}
+/* faq */
+details{border-bottom:1px solid var(--borda);padding:16px 0}
+summary{font-weight:700;cursor:pointer;color:var(--verde);font-size:18px}
+details p{margin:10px 0 0;color:var(--cinza)}
+footer{background:#0b2b29;color:#9fb8b1;font-size:13px;padding:30px 0}
+.fixo{position:fixed;left:0;right:0;bottom:0;background:var(--verde);padding:10px 16px;display:none;justify-content:center;z-index:9}
+.fixo .btn{font-size:16px;padding:12px 24px;box-shadow:none}
+@media (max-width:760px){
+  section{padding:48px 0}
+  .hero .grid,.pq,.bonus .box{grid-template-columns:1fr}
+  .bonus .pill{font-size:48px}
+  .fixo{display:flex}
+  body{padding-bottom:70px}
+  .btn{width:100%;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap grid">
+    <div>
+      <div class="tag">Funciona no ChatGPT, Gemini e Claude</div>
+      <h1>Pare de perder tempo.<br>Deixe a <span>IA resolver</span> por você.</h1>
+      <p class="sub">110 comandos prontos para copiar e colar. Currículo, contas, cardápio da semana, dever de casa dos filhos, mensagens difíceis e muito mais, resolvidos em minutos.</p>
+      <p style="margin-top:28px"><a class="btn" href="#oferta">Quero o kit por R$ 37</a></p>
+      <p class="mini">Acesso imediato · PDF para celular e computador · Pagamento seguro</p>
+    </div>
+    <div class="mock" aria-hidden="true">
+      <div class="h"><span class="n">012</span>Plano para sair das dívidas</div>
+<pre>Tenho estas dívidas: <span class="c">[nome, valor, juros]</span>. Consigo separar R$ <span class="c">[valor]</span> por mês. Monte um plano mostrando qual dívida pagar primeiro e em quantos meses fico livre.</pre>
+    </div>
+  </div>
+</header>
+
+<section class="dor">
+  <div class="wrap">
+    <h2>Todo mundo fala de IA. Mas na prática…</h2>
+    <ul>
+      <li>Você abre o ChatGPT, não sabe o que escrever e fecha.</li>
+      <li>Pergunta algo e recebe uma resposta genérica que não serve para a sua vida.</li>
+      <li>Vê gente economizando horas com IA e sente que está ficando para trás.</li>
+      <li>Já viu "listas de prompts" em inglês, para programador ou para marketing, mas nada para o seu dia a dia.</li>
+    </ul>
+    <p style="max-width:720px;margin-top:20px">O problema não é você. A IA responde tão bem quanto o pedido que recebe. <b>Este kit te dá os pedidos certos, já escritos</b>: é só trocar os campos em amarelo pelas suas informações.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>O que tem dentro</h2>
+    <p>10 capítulos organizados pela situação que você está vivendo. Abriu, achou, copiou, resolveu.</p>
+    <div class="cards">
+      <div class="card"><div class="e">💼</div><h3>Trabalho e carreira</h3><p>Currículo, simulador de entrevista, e-mails, pedir aumento, fórmulas de planilha.</p></div>
+      <div class="card"><div class="e">💰</div><h3>Dinheiro e finanças</h3><p>Raio-X dos gastos, plano para sair das dívidas, roteiro de negociação, renda extra.</p></div>
+      <div class="card"><div class="e">🏠</div><h3>Casa, cozinha e rotina</h3><p>Cardápio econômico com lista de compras, marmitas, rotina de limpeza, conta de luz.</p></div>
+      <div class="card"><div class="e">🌱</div><h3>Saúde e bem-estar</h3><p>Treino em casa, sono, hábitos, entender exames e preparar perguntas para o médico.</p></div>
+      <div class="card"><div class="e">📚</div><h3>Estudos e concursos</h3><p>Plano de estudos, professor particular, simulados, redação corrigida, idiomas.</p></div>
+      <div class="card"><div class="e">👨‍👩‍👧</div><h3>Filhos e família</h3><p>Rotina das crianças, conversas difíceis, histórias para dormir, cuidar dos pais.</p></div>
+      <div class="card"><div class="e">💬</div><h3>Mensagens difíceis</h3><p>Cobrar sem climão, dizer não, reclamar com empresa, pedir desculpas.</p></div>
+      <div class="card"><div class="e">🛍️</div><h3>Pequeno negócio</h3><p>Calcular preço, respostas para clientes, divulgação sem anúncio, script de vendas.</p></div>
+      <div class="card"><div class="e">📱</div><h3>Redes sociais</h3><p>Legendas, 30 ideias de posts, roteiros de vídeo, carrosséis, bio do perfil.</p></div>
+      <div class="card"><div class="e">✈️</div><h3>Viagens e lazer</h3><p>Roteiro completo, viagem barata, checklist de mala, programas no fim de semana.</p></div>
+      <div class="card"><div class="e">⭐</div><h3>10 Comandos Mestres</h3><p>Coringas que melhoram qualquer resposta da IA, em qualquer assunto.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="ex">
+  <div class="wrap">
+    <h2>Veja 3 comandos do kit</h2>
+    <p>É assim que cada um aparece no PDF: o texto pronto e os campos em amarelo para você completar.</p>
+    <div class="exs">
+      <div class="mock"><div class="h"><span class="n">021</span>Cardápio da semana econômico</div>
+<pre>Monte um cardápio de almoço e jantar para 7 dias para <span class="c">[número]</span> pessoas, com orçamento de R$ <span class="c">[valor]</span>. Reaproveite ingredientes e no final gere a lista de compras separada por seção do mercado.</pre></div>
+      <div class="mock"><div class="h"><span class="n">002</span>Simulador de entrevista</div>
+<pre>Você é o entrevistador de uma vaga de <span class="c">[cargo]</span>. Faça uma pergunta de cada vez, espere minha resposta e me dê uma nota de 0 a 10 e como responder melhor.</pre></div>
+      <div class="mock"><div class="h"><span class="n">061</span>Cobrar alguém sem climão</div>
+<pre>Preciso cobrar <span class="c">[pessoa]</span> que me deve <span class="c">[valor]</span> desde <span class="c">[quando]</span>. Escreva 3 mensagens de WhatsApp: uma leve, uma firme e uma final, todas educadas.</pre></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Como funciona</h2>
+    <div class="passos">
+      <div class="passo"><b>Compre e receba na hora</b><br>O acesso chega no seu e-mail logo após o pagamento.</div>
+      <div class="passo"><b>Abra o PDF no celular</b><br>Escolha a situação que você quer resolver.</div>
+      <div class="passo"><b>Copie e complete</b><br>Troque os campos em amarelo pelas suas informações.</div>
+      <div class="passo"><b>Cole na IA gratuita</b><br>ChatGPT, Gemini ou Claude. Pronto, problema resolvido.</div>
+    </div>
+    <p class="mini">Você também aprende a fórmula P.A.P.O., o jeito simples de criar seus próprios comandos para qualquer situação.</p>
+  </div>
+</section>
+
+<section class="bonus">
+  <div class="wrap box">
+    <div class="pill">💊</div>
+    <div>
+      <h2>Bônus: Organizador de Remédios e Saúde da Família</h2>
+      <p>Páginas prontas para imprimir e colar na geladeira. Ideal para quem toma remédio todo dia ou cuida de pais, avós ou filhos.</p>
+      <ul>
+        <li>Tabela de horários do dia (manhã, tarde, noite)</li>
+        <li>Checklist da semana para marcar cada dose tomada</li>
+        <li>Controle de estoque e vencimento de receitas</li>
+        <li>Agenda de consultas e exames</li>
+        <li>Ficha de emergência com alergias e contatos</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Para quem é</h2>
+    <div class="pq">
+      <div class="sim"><h3>✅ É para você se…</h3><ul>
+        <li>Nunca usou IA ou só faz perguntas simples</li>
+        <li>Quer ganhar tempo no trabalho, em casa e nos estudos</li>
+        <li>Quer organizar dinheiro, rotina e família</li>
+        <li>Prefere algo prático, sem curso longo</li>
+      </ul></div>
+      <div class="nao"><h3>❌ Não é para você se…</h3><ul>
+        <li>Você é programador e procura comandos técnicos avançados</li>
+        <li>Espera que a IA substitua médico, advogado ou contador</li>
+        <li>Quer promessa de "ficar rico com IA"</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="oferta ex" id="oferta">
+  <div class="wrap">
+    <h2>Leve o kit completo hoje</h2>
+    <div class="preco-box">
+      <ul>
+        <li>110 comandos prontos em 10 capítulos</li>
+        <li>10 Comandos Mestres para qualquer situação</li>
+        <li>Guia "Comece aqui" + fórmula P.A.P.O.</li>
+        <li>Bônus: Organizador de Remédios da Família</li>
+        <li>PDF para celular, computador ou impressão</li>
+      </ul>
+      <div class="de">De R$ 97</div>
+      <div class="por"><small>por</small> R$ 37</div>
+      <p class="mini" style="margin-top:4px">pagamento único · Pix ou cartão</p>
+      <p style="margin-top:20px"><a class="btn" id="cta" href="#checkout">Quero meu acesso agora</a></p>
+      <p class="mini">🔒 Compra processada com segurança pela plataforma de pagamento</p>
+    </div>
+    <div class="garantia">
+      <div class="s">🛡️</div>
+      <div><b>Garantia de 7 dias.</b> Abra o kit, use os comandos. Se não for para você, peça o reembolso dentro de 7 dias pela própria plataforma de pagamento.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="max-width:760px">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Preciso pagar alguma IA?</summary><p>Não. Todos os comandos funcionam nas versões gratuitas do ChatGPT, Gemini e Claude.</p></details>
+    <details><summary>Nunca usei IA. Vou conseguir?</summary><p>Sim. O kit foi feito exatamente para isso. A primeira página mostra em 3 minutos onde entrar e como usar.</p></details>
+    <details><summary>Como recebo o material?</summary><p>Logo após a confirmação do pagamento, você recebe por e-mail o acesso para baixar o PDF. No Pix a liberação é na hora.</p></details>
+    <details><summary>Funciona no celular?</summary><p>Sim. O PDF abre em qualquer celular e você copia o texto direto para o aplicativo da IA.</p></details>
+    <details><summary>A IA vai me dar diagnóstico ou receita de remédio?</summary><p>Não. Nos temas de saúde, os comandos ajudam a organizar a rotina, entender termos e preparar perguntas para o médico. Decisões de saúde são sempre do profissional.</p></details>
+    <details><summary>É assinatura?</summary><p>Não. É pagamento único, e o material é seu.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© IA na Vida Real. Todos os direitos reservados.</p>
+    <p>ChatGPT, Gemini e Claude são marcas de seus respectivos donos. Este produto não tem vínculo nem é endossado por OpenAI, Google ou Anthropic. Os resultados dependem do uso de cada pessoa. Respostas de inteligência artificial podem conter erros; em temas de saúde, finanças ou direito, consulte um profissional.</p>
+  </div>
+</footer>
+
+<div class="fixo"><a class="btn" href="#oferta">Quero o kit por R$ 37</a></div>
+
+</body>
+</html>
