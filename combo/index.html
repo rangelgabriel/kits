@@ -55,7 +55,19 @@ footer p{margin:6px 0}
 #kiwify-upsell-trigger-XiysthX{background:var(--amarelo)!important;color:#1d2433!important;font-weight:800;font-size:19px;padding:18px 30px;border:0;border-radius:999px;box-shadow:0 6px 0 #d9a92f;cursor:pointer;max-width:100%}
 #kiwify-upsell-cancel-trigger-XiysthX{margin-top:18px;color:var(--cinza);text-decoration:underline;cursor:pointer;font-size:15px}
 .aviso{background:#fff7e0;border:1px solid #f0d78a;border-radius:12px;padding:14px 18px;font-weight:700;text-align:center}
-@media(max-width:760px){.itens{grid-template-columns:1fr}}</style></head><body>
+@media(max-width:760px){.itens{grid-template-columns:1fr}}</style><!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1586105020181086');fbq('track','PageView');
+document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[href*="pay.kiwify.com.br"]');if(a)fbq('track','InitiateCheckout');});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1586105020181086&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel -->
+</head><body>
 <header class="hero"><div class="wrap"><div class="tag">Combo · 4 produtos em um acesso só</div>
 <h1>Casa, dinheiro, rotina e férias das crianças <span>em ordem</span></h1>
 <p class="sub">Os 4 produtos juntos: reparos da casa, controle do dinheiro, a IA trabalhando por você e 30 dias de brincadeiras sem tela. Tudo por menos do que dois deles separados.</p>
