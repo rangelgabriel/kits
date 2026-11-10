@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Combo Vida em Ordem</title>
+<meta name="description" content="Os 4 cursos e kits em um acesso só: Casa em Dia, Dinheiro no Controle, IA na Vida Real e Kit Férias Divertidas">
+<style>
+:root{--cor:#5a3d8a;--clara:#f1ecf8;--amarelo:#ffd36b;--txt:#1d2433;--cinza:#5b6675;--borda:#e1e4e8}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--txt);background:#fff;line-height:1.6;font-size:17px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.2;margin:0 0 14px}
+h2{font-size:clamp(26px,4vw,36px);color:var(--cor)}
+section{padding:60px 0}
+.btn{display:inline-block;background:var(--amarelo);color:#1d2433;font-weight:800;font-size:19px;padding:18px 34px;border-radius:999px;text-decoration:none;box-shadow:0 6px 0 #d9a92f}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 #d9a92f}
+.mini{font-size:14px;color:var(--cinza);margin-top:12px}
+.hero{background:var(--cor);color:#fff;padding:52px 0 68px}
+.hero .tag{letter-spacing:.14em;text-transform:uppercase;font-size:13px;font-weight:700;opacity:.85}
+.hero h1{font-size:clamp(32px,5.6vw,54px);margin:14px 0 18px}
+.hero h1 span{color:var(--amarelo)}
+.hero p.sub{font-size:clamp(18px,2.4vw,21px);opacity:.92;max-width:640px}
+.hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero .mini{color:#fff;opacity:.8}
+.hero img{width:100%;border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.35);transform:rotate(1.5deg)}
+.dores{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.dores div{background:#fff5f5;border:1px solid #f3d4d4;border-radius:12px;padding:16px 18px}
+.dores div:before{content:"✗ ";color:#c94040;font-weight:800}
+.claro{background:var(--clara)}
+ol.aulas{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+ol.aulas li{background:#fff;border:1px solid var(--borda);border-radius:12px;padding:14px 16px;display:flex;gap:12px}
+ol.aulas b{background:var(--cor);color:#fff;border-radius:8px;min-width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:15px}
+ol.aulas small{display:block;color:var(--cinza);font-size:14px;line-height:1.4}
+.bonus{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.bonus div{border:2px dashed var(--cor);border-radius:14px;padding:18px}
+.bonus h3{font-size:18px;color:var(--cor);margin-bottom:6px}
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.passos div{background:#fff;border-radius:14px;padding:20px;border:1px solid var(--borda)}
+.passos b{font-size:30px;color:var(--cor)}
+.oferta{text-align:center}
+.box{max-width:520px;margin:24px auto 0;border:3px solid var(--cor);border-radius:20px;padding:30px 24px;background:#fff}
+.de{color:var(--cinza);text-decoration:line-through}
+.preco{font-size:56px;font-weight:900;color:var(--cor);line-height:1;margin:6px 0}
+.box ul{text-align:left;padding-left:20px;margin:18px 0 24px}
+.garantia{display:flex;gap:16px;align-items:center;max-width:640px;margin:30px auto 0;text-align:left;background:var(--clara);border-radius:14px;padding:18px}
+.garantia span{font-size:40px}
+details{border-bottom:1px solid var(--borda);padding:16px 0}
+summary{font-weight:700;cursor:pointer}
+footer{background:#1d2433;color:#aab1bd;font-size:14px;padding:30px 0}
+footer p{margin:6px 0}
+@media(max-width:760px){.hero .grid,.dores,ol.aulas,.bonus,.passos{grid-template-columns:1fr}.hero img{transform:none}}
+.itens{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.itens div{background:#fff;border:1px solid var(--borda);border-radius:14px;padding:20px}
+.itens h3{color:var(--cor);font-size:20px;margin-bottom:6px}.itens .v{color:var(--cinza);font-size:14px}
+.soma{max-width:520px;margin:24px auto 0;text-align:left}.soma p{display:flex;justify-content:space-between;margin:4px 0;border-bottom:1px dotted var(--borda)}
+#kiwify-upsell-XiysthX{text-align:center;margin-top:20px}
+#kiwify-upsell-trigger-XiysthX{background:var(--amarelo)!important;color:#1d2433!important;font-weight:800;font-size:19px;padding:18px 30px;border:0;border-radius:999px;box-shadow:0 6px 0 #d9a92f;cursor:pointer;max-width:100%}
+#kiwify-upsell-cancel-trigger-XiysthX{margin-top:18px;color:var(--cinza);text-decoration:underline;cursor:pointer;font-size:15px}
+.aviso{background:#fff7e0;border:1px solid #f0d78a;border-radius:12px;padding:14px 18px;font-weight:700;text-align:center}
+@media(max-width:760px){.itens{grid-template-columns:1fr}}</style></head><body>
+<header class="hero"><div class="wrap"><div class="tag">Combo · 4 produtos em um acesso só</div>
+<h1>Casa, dinheiro, rotina e férias das crianças <span>em ordem</span></h1>
+<p class="sub">Os 4 produtos juntos: reparos da casa, controle do dinheiro, a IA trabalhando por você e 30 dias de brincadeiras sem tela. Tudo por menos do que dois deles separados.</p>
+<p style="margin-top:28px"><a class="btn" href="https://pay.kiwify.com.br/FlObbyO">Quero o combo por R$ 67</a></p><p class="mini">Acesso imediato · 7 dias de garantia · Pix, cartão ou boleto</p></div></header>
+<section><div class="wrap"><h2>O que vem no combo</h2><div class="itens"><div><h3>🏠 Casa em Dia</h3><p>11 aulas em vídeo de pequenos reparos com segurança: tomada, chuveiro, disjuntor, torneira, descarga, ralo, furar parede. Com apostila em PDF.</p><p class="v">Vendido sozinho por R$ 37</p></div><div><h3>💰 Dinheiro no Controle</h3><p>Desafio de 30 dias com 8 aulas em vídeo, apostila com uma tarefa por dia e planilha pronta de orçamento, dívidas e reserva.</p><p class="v">Vendido sozinho por R$ 27</p></div><div><h3>🤖 IA na Vida Real</h3><p>E-book com 110 comandos prontos para usar o ChatGPT, o Gemini e o Claude no dia a dia, e o Organizador de Remédios.</p><p class="v">Vendido sozinho por R$ 37</p></div><div><h3>🎨 Kit Férias Divertidas</h3><p>Calendário com 30 desafios e 60 brincadeiras sem tela para crianças de 4 a 10 anos, para imprimir.</p><p class="v">Vendido sozinho por R$ 24,90</p></div></div></div></section>
+<section class="claro oferta" id="comprar"><div class="wrap"><h2>Quanto custa</h2><div class="soma"><p><span>Casa em Dia</span><span>R$ 37</span></p><p><span>Dinheiro no Controle</span><span>R$ 27</span></p><p><span>IA na Vida Real</span><span>R$ 37</span></p><p><span>Kit Férias Divertidas</span><span>R$ 24,90</span></p><p><b>Total separado</b><b>R$ 125,80</b></p></div><div class="box">
+<div class="de">Separados: R$ 125,80</div><div class="preco">R$ 67</div><div class="mini">pagamento único · os 4 produtos</div>
+<ul><li>19 aulas em vídeo (Casa em Dia e Dinheiro no Controle)</li><li>Apostilas em PDF e planilha pronta</li><li>E-book IA na Vida Real com 110 comandos</li><li>Kit Férias Divertidas para imprimir</li><li>Tudo numa área de membros só, na Kiwify</li></ul>
+<a class="btn" href="https://pay.kiwify.com.br/FlObbyO">Quero o combo por R$ 67</a></div>
+<div class="garantia"><span>🛡️</span><div><b>Garantia de 7 dias.</b> Se achar que não é para você, peça o reembolso dentro de 7 dias pela própria Kiwify.</div></div></div></section>
+<section><div class="wrap"><h2>Perguntas frequentes</h2>
+<details><summary>Como recebo?</summary><p>Logo após o pagamento você recebe um e-mail da Kiwify com o acesso à área de membros, com as aulas e todos os arquivos para baixar.</p></details>
+<details><summary>Preciso de experiência?</summary><p>Não. Todos os produtos começam do zero e foram feitos para quem nunca fez aquilo antes.</p></details>
+<details><summary>Já comprei um dos produtos. Vale a pena?</summary><p>Logo depois da compra de qualquer um deles, aparece uma oferta especial do combo com desconto para quem já é cliente.</p></details>
+<details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Se não for para você, pede o reembolso direto na Kiwify.</p></details></div></section>
+<footer><div class="wrap"><p>Combo Vida em Ordem · produtos digitais vendidos pela Kiwify.</p><p>Conteúdo educativo. Os reparos ensinados são de manutenção simples; o conteúdo de finanças não é consultoria nem recomendação de investimento.</p></div></footer>
+</body></html>
